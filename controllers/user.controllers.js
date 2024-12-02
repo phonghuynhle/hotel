@@ -8,7 +8,7 @@ const register = async (req, res) => {
   try {
     // Kiểm tra xem email hoặc số điện thoại đã tồn tại hay chưa
     const checkExistsResponse = await fetch(
-      "http://4.191.77.230/api/v1/users/checkEmailPhoneExists",
+      "http://4.208.35.213/api/v1/users/checkEmailPhoneExists",
       {
         method: "POST",
         headers: {

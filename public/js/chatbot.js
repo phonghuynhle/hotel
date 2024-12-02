@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Thực hiện yêu cầu AJAX bằng jQuery
       $.ajax({
-        url: "http://4.191.77.230/api/v1/chatbotAl/findlocation",
+        url: "http://4.208.35.213/api/v1/chatbotAl/findlocation",
         method: "POST",
         data: formData,
         headers: { token: token },

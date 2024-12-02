@@ -8,13 +8,13 @@ $(document).ready(function () {
     }
 
     $.ajax({
-      url: "http://4.191.77.230/api/v1/authen/forgotpassword", // Replace with your server endpoint
+      url: "http://4.208.35.213/api/v1/authen/forgotpassword", // Replace with your server endpoint
       method: "POST",
       data: JSON.stringify({ email: email }),
       contentType: "application/json",
       success: function (response) {
         if (response) {
-          window.location.href = `http://4.191.77.230/resetpassword`;
+          window.location.href = `http://4.208.35.213/resetpassword`;
           $("#responseMessage").text(
             "A password reset link has been sent to your email."
           );

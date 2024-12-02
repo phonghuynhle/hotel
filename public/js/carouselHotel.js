@@ -26,7 +26,7 @@ $(document).ready(() => {
     const container = $("#" + containerId);
 
     $.ajax({
-      url: `http://4.191.77.230/api/v1/hotels`,
+      url: `http://4.208.35.213/api/v1/hotels`,
       method: "GET",
       data: { sortType: sortType },
       success: (data) => {

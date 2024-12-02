@@ -13,13 +13,13 @@ $(document).ready(function () {
     }
 
     $.ajax({
-      url: "http://4.191.77.230/api/v1/authen/resetpassword", // Thay đổi URL này theo endpoint của bạn
+      url: "http://4.208.35.213/api/v1/authen/resetpassword", // Thay đổi URL này theo endpoint của bạn
       type: "POST",
       contentType: "application/json",
       data: JSON.stringify({ token, newpassword }),
       success: function (response) {
         alert("Password reset successful");
-        window.location.href = "http://4.191.77.230/signin";
+        window.location.href = "http://4.208.35.213/signin";
       },
       error: function (xhr) {
         alert("Mã xác thực không chính xác");

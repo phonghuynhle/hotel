@@ -22,7 +22,7 @@ $(document).ready(function () {
   let hotelName;
   // Helper function to extract a query parameter
   $.ajax({
-    url: "http://4.191.77.230/api/v1/booking/" + bookingID,
+    url: "http://4.208.35.213/api/v1/booking/" + bookingID,
     method: "GET",
     success: (data) => {
       $("#RoomName").html("Loại phòng" + "<br>" + data.Room.name);
@@ -91,7 +91,7 @@ $(document).ready(function () {
     console.log(data);
 
     $.ajax({
-        url: "http://4.191.77.230/api/v1/vnpay/create-vnpay-url",
+        url: "http://4.208.35.213/api/v1/vnpay/create-vnpay-url",
         method: "POST",
         data: JSON.stringify(data), // Send data as JSON string
         contentType: "application/json",

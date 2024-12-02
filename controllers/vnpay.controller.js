@@ -87,7 +87,7 @@ async function vnpayReturn(req, res, next) {
 
         // Cập nhật trạng thái đơn hàng dựa trên mã phản hồi từ VNPAY
         if (responseCode === '00') { // Giao dịch thành công
-            res.redirect(`http://4.191.77.230/result?orderId=${orderId}`);
+            res.redirect(`http://4.208.35.213/result?orderId=${orderId}`);
             await Booking.update({ status: true }, { where: { id: orderId } });
             res.status(200).send({ message: "Update booking status successfully" });
             

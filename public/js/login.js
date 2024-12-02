@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
 
   // Gửi yêu cầu POST đến URL xử lý dữ liệu đăng nhập
   $.ajax({
-    url: "http://4.191.77.230/api/v1/users/login",
+    url: "http://4.208.35.213/api/v1/users/login",
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify(data),
